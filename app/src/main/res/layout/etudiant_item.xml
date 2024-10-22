@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageEtudiant"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/titreNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/Pistach"
+        android:text="Nom : "
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toEndOf="@+id/imageEtudiant"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="20dp"
+        android:text="Nom"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toEndOf="@+id/imageEtudiant"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titrePrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@color/Pistach"
+        android:text="Prenom : "
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/titreNom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Prénom"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/nom"
+        app:layout_constraintTop_toBottomOf="@id/nom" />
+
+    <TextView
+        android:id="@+id/titreVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/Pistach"
+        android:text="Ville : "
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/titreNom"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ville"
+        android:layout_width="83dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Ville"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/nom"
+        app:layout_constraintTop_toBottomOf="@id/prenom" />
+
+    <TextView
+        android:id="@+id/titreSexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/Pistach"
+        android:text="Sexe : "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/titreVille"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="Sexe"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ville"
+        app:layout_constraintStart_toStartOf="@id/ville"
+        app:layout_constraintTop_toTopOf="@+id/nom"
+        app:layout_constraintVertical_bias="0.424" />
+</androidx.constraintlayout.widget.ConstraintLayout>

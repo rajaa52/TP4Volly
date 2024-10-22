@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">projetws</string>
+    <string name="ville">Ville : </string>
+    <string name="image_description">ajouter  une image</string>
+    <string name="search">Recherche</string>
+
+    <array name="villes">
+        <item>Marrakech</item>
+        <item>Casa</item>
+        <item>Rabat</item>
+        <item>Tanger</item>
+        <item>Agadir</item>
+        <item>El Jadida</item>
+    </array>
+</resources>

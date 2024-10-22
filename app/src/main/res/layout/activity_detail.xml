@@ -1,0 +1,133 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="379dp"
+        android:layout_height="66dp"
+        android:background="@color/bleuC"
+        app:title="Détail étudiant"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageEtudiant"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/toolbar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nom -->
+    <TextView
+        android:id="@+id/nomTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageEtudiant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nom"
+        android:paddingEnd="8dp" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/imageEtudiant"
+        app:layout_constraintStart_toEndOf="@id/nomTitre"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Prénom -->
+
+    <TextView
+        android:id="@+id/prenomTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"
+        android:text="Prénom :"
+        android:textStyle="bold"
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/prenom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomTitre" />
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/nom"
+        app:layout_constraintStart_toEndOf="@id/prenomTitre"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Ville -->
+
+    <TextView
+        android:id="@+id/villeTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"
+        android:text="Ville :"
+        android:textStyle="bold"
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/ville"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prenomTitre" />
+
+    <!-- Sexe -->
+    <TextView
+        android:id="@+id/ville"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/villeTitre"
+        app:layout_constraintTop_toBottomOf="@id/prenom" />
+
+    <TextView
+        android:id="@+id/sexeTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexe :"
+        android:textStyle="bold"
+
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/villeTitre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sexe"
+        android:paddingEnd="8dp" />
+
+    <!-- ID Etudiant (invisible) -->
+    <TextView
+        android:id="@+id/sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sexeTitre"
+        app:layout_constraintTop_toBottomOf="@id/ville" />
+
+    <TextView
+        android:id="@+id/id_etudiant"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
